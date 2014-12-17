@@ -13,7 +13,7 @@ class UserTest < Test::Unit::TestCase
     user.last_name = "sato"
     user.first_name = "hanako"
 
-      assert_equal(expected, user.full_name)
+    assert_equal(expected, user.full_name)
   end
 
   data({
