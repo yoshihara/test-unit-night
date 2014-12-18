@@ -11,7 +11,7 @@ class UserTest# < Test::Unit::TestCase テストしないためにコメント�
     end
 
     test "localeがenの時" do
-      user = ::User.new("en")
+      user = User.new("en")
       user.last_name = "sato"
       user.first_name = "hanako"
 

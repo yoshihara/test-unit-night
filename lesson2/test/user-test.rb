@@ -10,7 +10,7 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_full_name_en
-    user = ::User.new("en")
+    user = User.new("en")
     user.last_name = "sato"
     user.first_name = "hanako"
 
