@@ -1,6 +1,6 @@
 require "user"
 
-class UserTest < Test::Unit::TestCase
+class UserDataTest < Test::Unit::TestCase
   data do
     [
       ["ja",  "sato hanako"],
