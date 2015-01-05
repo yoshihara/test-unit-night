@@ -1,6 +1,6 @@
 require "user"
 
-class UserTest# < Test::Unit::TestCase テストしないためにコメントアウトしています
+class UserTest < Test::Unit::TestCase
   sub_test_case "#full_name" do
     test "localeがjaのとき" do
       user = User.new("ja")
