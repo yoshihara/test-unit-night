@@ -17,11 +17,11 @@ class UserDataTest < Test::Unit::TestCase
   end
 
   data({
-         "localeがjaのとき" => ["ja", true],
-         "localeがenのとき" => ["en", false],
+         "localeがjaのとき" => [true, "ja"],
+         "localeがenのとき" => [false, "en"],
        })
   def test_ja(data)
-    locale, expected = data
+    expected, locale = data
     user = User.new(locale)
 
     assert { user.ja? == expected }
