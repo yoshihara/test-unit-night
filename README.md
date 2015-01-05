@@ -14,4 +14,4 @@ Tnen you can run tests in each lessonX/ with `bundle exec rake test`.
 
 ## presentation
 
-<script async class="speakerdeck-embed" data-id="d4c0cd1077520132c3752e62f14f6024" data-ratio="1.33159947984395" src="//speakerdeck.com/assets/embed.js"></script>
+https://speakerdeck.com/yoshihara/test-unit-night (for Japanese)
