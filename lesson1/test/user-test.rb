@@ -1,6 +1,32 @@
 require "user"
 
 class UserTest < Test::Unit::TestCase
+  def setup
+    p :parent
+    p self.method_name
+  end
+
+  class ChildTest < self
+    def setup
+      p :child
+      p self.method_name
+    end
+
+    def test_true
+      assert_true(true)
+    end
+  end
+
+  data("ja" => [2, "ja"],
+       "japanese" => [8, "japanese"])
+  def test_size(data)
+    # p data # => [2, "ja"] or [8, "japanese"]
+    expected, actual = data
+    mock(actual).size { expected }
+
+    assert_equal(expected, actual.length)
+  end
+
   def test_full_name_ja
     user = User.new("ja")
     user.last_name = "sato"
